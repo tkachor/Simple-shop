@@ -1,0 +1,28 @@
+﻿@model ShopProductViewModel
+
+<div class="container">
+    <h2>Ваше замовлення:</h2>
+
+    @foreach (var item in Model.shopCart.listShopItem)
+    {
+      
+        <div class="card mb-3 cart-container" >
+            <div class="row no-gutters">
+                <div class="col-md-4 div-center">
+                   <img class="cart-img" src="@item.product.Img" />
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <b>Товар: </b> @item.product.Name<br /> 
+                        <b>Ціна: </b> @item.product.Price
+                    </div>
+                </div>
+            </div>
+        </div>       
+    }
+    <hr />
+    <div class="div-center">
+        <a class="btn btn-success" asp-controller="Order" asp-action="Checkout">Замовити </a>
+        <a class="btn btn-warning" href="/Product/List/perfopanely">Продовжити покупки</a> 
+    </div>
+</div>

@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="~/css/style.css" type="text/css" />
+</head>
+<body>
+    <div class="container">
+        <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
+           <img class="my-0 mr-md-auto font-weight-normal" src="~/img/logo.jpg" />
+            <nav class="my-2 my-md-0 mr-md-3">
+                <a class="p-2 text-dark" asp-controller="Home" asp-action="Index">Головна</a>
+                <a class="p-2 text-dark" href="/Product/List/perfopanely">Перфопанелі</a>
+                <a class="p-2 text-dark" href="/Product/List/komplectuyuchi">Комлектуючі</a>
+                <a class="p-2 text-dark" asp-controller="Delivery" asp-action="Index">Доставка/Оплата</a>
+            </nav>
+            <a class="btn btn-danger cart" href="/ShopCart/">Корзина</a>
+        </div>
+    </div>
+
+    <main>
+        <section class="jumbotron text-center full-page-block">
+            <div class="container">
+                <h1 class="jumbotron-heading">Панелі для інструментів</h1>
+                <p class="lead text-muted "> Найкраще рішення для упорядкування різного виду інструменту в одному місці.</p>
+                <p>
+                   
+                    <a href="tel:+380938855236" class="btn btn-warning my-2">Консультація</a>
+                </p>
+            </div>
+        </section>
+
+        <div class="container">
+            @RenderBody()
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <p class="float-right"><a href="#">На верх</a></p>
+                <p>© 2020 perfopanel.com.ua / всі права захищено. · <a href="#">Політика конфіденційності</a> · <a href="#">Договір користувача</a></p>
+            </div>
+        </footer>
+    </main>
+    <script src="~/js/bootstrap.min.js"></script>
+</body>
+</html>

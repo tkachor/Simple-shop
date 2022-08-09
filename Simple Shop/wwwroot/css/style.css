@@ -1,0 +1,93 @@
+﻿html {
+    height: 100%;
+}
+body {
+    background-color: white;
+    position: relative;
+    padding-bottom: 70px;
+    min-height: 100%;
+}
+
+.cart {
+    color: #ffffff;
+    border-color: #f94745;
+    background: #f6433c;    
+}
+
+.full-page-block {
+    background: url(../img/bg-pattern.png), linear-gradient(to left,#df060e,#333);
+}
+
+h1 {
+    color: white;
+    font-size: 50px;
+}
+
+.price {
+    display: inline;
+    font-size: 18px;
+    font-weight: 600;
+    padding-left: 20px;
+}
+
+.addtocart {
+    display: inline;
+    float: right;
+    padding-right: 30px;
+}
+.product-cart{
+    margin-bottom:20px;
+}
+
+.product-title {
+    font-size: 20px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.cart-img {
+    height: 170px;
+}
+
+.div-center{
+    text-align:center;
+}
+
+.card-body {
+    margin-top: 30px;
+    font-size: 20p;
+    font-size: 18px;
+}
+
+.cart-container {
+    margin-top:25px;
+    border: 2px dashed rgba(0, 0, 0, 0.125);
+}
+
+
+
+.footer {
+    height: 60px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #efefef;
+    padding-top: 18px;
+}
+
+.forma {    
+    width: 450px;
+    background: #fafafa;   
+    margin: 0px auto;
+    margin-top: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 15px;
+}
+
+
+.succes-margin {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
